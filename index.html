@@ -19,7 +19,7 @@
     .hero-banner {
       background-image:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url('https://asset-prod.france.fr/touquet_plage_80f7baf241.jpg');
+        url('images/hero.jpg');
       background-size: cover;
       background-position: center center;
       min-height: 75vh;
@@ -213,10 +213,51 @@
       margin-top: 0.15rem;
     }
 
+    .day-date {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.8em;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: #0d6efd;
+      margin-bottom: 0.25rem;
+    }
+    .day-topics .session-time {
+      flex: 0 0 6.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.85em;
+      font-weight: 600;
+      color: #6c757d;
+      white-space: nowrap;
+    }
+    .day-topics li.session-break {
+      color: #adb5bd;
+      font-size: 0.85em;
+      padding: 0.25rem 0;
+    }
+    .day-topics li.session-break::before { background: #dee2e6; }
+    .day-topics li.session-break .session-time { color: #adb5bd; }
+
+    .language-notice {
+      max-width: 640px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: #e7f1ff;
+      color: #004080;
+      border-left: 4px solid #0d6efd;
+      border-radius: 8px;
+      padding: 0.85rem 1.25rem;
+      font-weight: 600;
+    }
+    .language-notice em { font-weight: 400; }
+
     @media (max-width: 767.98px) {
       .day-card { padding: 1.5rem 1.25rem 1.25rem 1.25rem; }
       .day-number { font-size: 2.5rem; }
       .day-theme { font-size: 1.05em; }
+      .day-topics .session-time { flex-basis: 5.5rem; }
     }
 
     /* Committee */
@@ -465,32 +506,48 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
 <!-- PROGRAMME -->
 <section id="schedule" class="schedule-section py-5">
   <div class="container">
-    <h2 class="text-center mb-5">Programme</h2>
+    <h2 class="text-center mb-3">Programme prévisionnel</h2>
+    <p class="text-center text-muted mb-4">Du lundi 19 au vendredi 23 octobre 2026 · programme susceptible d'évoluer</p>
+
+    <div class="language-notice mx-auto mb-5">
+      <i class="fas fa-language me-2"></i>
+      <span>Certains cours seront assurés en anglais. <em lang="en">Some lectures will be given in English.</em></span>
+    </div>
 
     <div class="row g-4">
 
       <div class="col-md-6">
         <div class="day-card h-100">
-          <span class="day-number"> Jour 1</span>
-          <div class="day-theme">Panorama de l'IA et Sciences</div>
+          <span class="day-number">Jour 1</span>
+          <div class="day-date">Lundi 19 octobre 2026</div>
+          <div class="day-theme">Panorama de l'IA et sciences</div>
           <ul class="day-topics">
-            <li>Introduction générale à l'IA et ses enjeux scientifiques <span class="session-speaker">Miguel Couceiro (IST, U. Lisboa)</span></li>
-            <li>Apprentissage automatique et apprentissage profond <span class="session-speaker">Frédéric Koriche (CRIL,CNRS)</span></li>
-            <li><div>IA symbolique et raisonnement automatisé<span class="session-speaker">Thomas Schiex (INRA, France)</span></div></li>
-            <li class="session-poster"><i class="fas fa-clipboard-list me-1"></i> Session demos et posters</li>
+            <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil et ouverture</span></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Introduction : IA et recherche scientifique<span class="session-speaker">Miguel Couceiro (IST, U. Lisboa)</span></div></li>
+            <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>Apprentissage et deep learning<span class="session-speaker">Frédéric Koriche (CRIL, CNRS)</span></div></li>
+            <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
+            <li><span class="session-time">14:00 – 16:00</span><div>Raisonnement neuro-symbolique<span class="session-speaker">Thomas Schiex (INRA, France)</span></div></li>
+            <li class="session-break"><span class="session-time">16:00 – 16:15</span><span>Pause</span></li>
+            <li class="session-poster"><span class="session-time">16:15 – 17:15</span><div>Présentations des participants et de leurs travaux</div></li>
           </ul>
         </div>
       </div>
 
       <div class="col-md-6">
         <div class="day-card h-100">
-          <span class="day-number"> Jour 2</span>
-          <div class="day-theme">Graphes de connaissances, ontologies et applications biomedicales</div>
+          <span class="day-number">Jour 2</span>
+          <div class="day-date">Mardi 20 octobre 2026</div>
+          <div class="day-theme">Graphes de connaissances et applications biomédicales</div>
           <ul class="day-topics">
-            <li><div>Introduction aux graphes de connaissances<span class="session-speaker">Fatiha Saïs (Paris Saclay University)</span></div></li>
-            <li><div>Raisonnement et extraction d'informations biomedicales<span class="session-speaker">Adrien Coulet (INRIA)</span></div></li>
-            <li><div>Etudes de cas en biologie et medecine<span class="session-speaker">Gayo Diallo (Univ Bordeaux) </span></div></li>
-            <li class="session-poster"><i class="fas fa-clipboard-list me-1"></i> Session posters et exposes courts</li>
+            <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Graphes de connaissances : bases<span class="session-speaker">Fatiha Saïs (Paris Saclay University)</span></div></li>
+            <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>Extraction et raisonnement en biomédecine<span class="session-speaker">Adrien Coulet (INRIA)</span></div></li>
+            <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
+            <li><span class="session-time">14:00 – 16:00</span><div>Cas d'usage en biologie et santé<span class="session-speaker">Gayo Diallo (Univ Bordeaux)</span></div></li>
+            <li class="session-break"><span class="session-time">16:00 – 16:15</span><span>Pause</span></li>
+            <li class="session-poster"><span class="session-time">16:15 – 17:15</span><div>Session posters et exposés courts</div></li>
           </ul>
         </div>
       </div>
@@ -498,13 +555,16 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
       <div class="col-md-6">
         <div class="day-card h-100">
           <span class="day-number">Jour 3</span>
-          <div class="day-theme">IA, santé et sciences humaines</div>
+          <div class="day-date">Mercredi 21 octobre 2026</div>
+          <div class="day-theme">Langues, grands modèles et données médicales</div>
           <ul class="day-topics">
-            <li>Traitement automatique des langues et extraction d'informations<span class="session-speaker">Pierre Zweigenbaum (LISN, Paris-Saclay)</span></li>
-            <li><div>Grands modèles de langues<span class="session-speaker">Christophe Cerisara (Loria, Nancy)</span></div></li>
-            <li><div>IA appliquée aux données médicales<span class="session-speaker">Pierre Zweigenbaum (LISN, Paris-Saclay)</span></div></li>
-            <li>IA et sciences humaines et sociales</li>
-            <li class="session-poster"><i class="fas fa-clipboard-list me-1"></i> Session demos et posters</li>
+            <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>TAL et extraction d'informations<span class="session-speaker">Pierre Zweigenbaum (LISN, Paris-Saclay)</span></div></li>
+            <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>Modèles de langue de grande taille<span class="session-speaker">Christophe Cerisara (Loria, Nancy)</span></div></li>
+            <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
+            <li><span class="session-time">14:00 – 16:00</span><div>Exploitation des données médicales par l'IA<span class="session-speaker">Pierre Zweigenbaum (LISN, Paris-Saclay)</span></div></li>
+            <li class="session-break"><span class="session-time">16:00 – 16:15</span><span>Pause</span></li>
           </ul>
         </div>
       </div>
@@ -512,12 +572,17 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
       <div class="col-md-6">
         <div class="day-card h-100">
           <span class="day-number">Jour 4</span>
-          <div class="day-theme">Modèles génératifs pour la chimie et l'environnement </div>
+          <div class="day-date">Jeudi 22 octobre 2026</div>
+          <div class="day-theme">IA pour les matériaux et l'environnement</div>
           <ul class="day-topics">
-            <li>Modèles génératifs pour la découverte de matériaux<span class="session-speaker">Astrid Klipfel (CRIL CNRS)</span></li>
-            <li><div>IA pour la conception de matériaux et les sciences environnementales<span class="session-speaker">Adlane Sayede (UCCS CNRS)</span></div></li>
-            <li>Simulation moléculaire par IA</li>
-            <li class="session-poster"><i class="fas fa-clipboard-list me-1"></i> Session demos et posters</li>
+            <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Génération et découverte de matériaux<span class="session-speaker">Astrid Klipfel (CRIL CNRS)</span></div></li>
+            <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>Conception de matériaux et environnement<span class="session-speaker">Adlane Sayede (UCCS CNRS)</span></div></li>
+            <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
+            <li class="session-poster"><span class="session-time">14:00 – 16:00</span><div>Démonstrations et échanges autour des applications présentées – Projet MAIA</div></li>
+            <li class="session-break"><span class="session-time">16:00 – 16:15</span><span>Pause</span></li>
+            <li class="session-poster"><span class="session-time">16:15 – 17:15</span><div>Démonstrations et échanges autour des applications présentées – Projet MAIA</div></li>
           </ul>
         </div>
       </div>
@@ -525,11 +590,14 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
       <div class="col-md-6 mx-auto">
         <div class="day-card h-100">
           <span class="day-number">Jour 5</span>
-          <div class="day-theme">Ethique et perspectives futures</div>
+          <div class="day-date">Vendredi 23 octobre 2026</div>
+          <div class="day-theme">Éthique et perspectives</div>
           <ul class="day-topics">
-            <li>Enjeux éthiques de l'IA appliquée à la recherche scientifique <span class="session-speaker">Marion Ho-Dac (Centre Droit, Éthique et Procédures)</span> </li>
-            <li>IA responsable : transparence, explicabilité et impacts sociétaux <span class="session-speaker">Céline Hudelot (CentraleSupélec - MICS)</span></li>
-            <li>Perspectives et défis futurs de l'IA en sciences</li>
+            <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Éthique de l'IA dans la recherche<span class="session-speaker">Marion Ho-Dac (Centre Droit, Éthique et Procédures)</span></div></li>
+            <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>Conception de matériaux et environnement<span class="session-speaker">Céline Hudelot (CentraleSupélec - MICS)</span></div></li>
+            <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
           </ul>
         </div>
       </div>
