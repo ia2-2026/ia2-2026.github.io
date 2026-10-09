@@ -268,6 +268,17 @@
     .member-card .committee-name {
       font-family: 'Poppins', sans-serif; font-size: 1em; color: #212529;
     }
+
+    /* Logos partenaires */
+    .partner-logo {
+      max-height: 80px;
+      min-width: 0;
+      flex: 0 1 auto;
+      object-fit: contain;
+    }
+    @media (min-width: 992px) {
+      .partner-logo { max-height: 70px; }
+    }
   </style>
 </head>
 <body>
@@ -671,11 +682,12 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
 <!-- LOGOS PARTENAIRES -->
 <section class="py-5 bg-white">
   <div class="container">
-    <div class="d-flex flex-wrap justify-content-center align-items-center gap-5">
-      <img src="logo/cnrs.png" alt="CNRS" style="max-height: 80px;">
-      <img src="logo/univ-artois.jpg" alt="Université d'Artois" style="max-height: 80px;">
-      <img src="logo/cril.png" alt="CRIL" style="max-height: 80px;">
-      <img src="logo/gdr-radia.jpg" alt="GDR RADIA" style="max-height: 80px;">
+    <div class="d-flex flex-wrap flex-lg-nowrap justify-content-center align-items-center gap-5 gap-lg-4">
+      <img class="partner-logo" src="logo/cnrs.png" alt="CNRS">
+      <img class="partner-logo" src="logo/univ-artois.jpg" alt="Université d'Artois">
+      <img class="partner-logo" src="logo/cril.png" alt="CRIL">
+      <img class="partner-logo" src="logo/gdr-radia.jpg" alt="GDR RADIA">
+      <img class="partner-logo" src="logo/logoMAIA.png" alt="MAIA – Mastering Artificial Intelligence Applications">
     </div>
   </div>
 </section>
