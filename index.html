@@ -212,6 +212,47 @@
       font-size: 0.92em;
       margin-top: 0.15rem;
     }
+    .day-topics .session-slides {
+      display: inline-block;
+      margin-top: 0.35rem;
+      padding: 0.1rem 0.55rem;
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-size: 0.8em;
+      font-weight: 600;
+      color: #004080;
+      background: #e7f1ff;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+    .day-topics .session-slides:hover {
+      background: #004080;
+      color: #ffffff;
+    }
+
+    .maia-talks { margin-top: 0.4rem; font-style: normal; }
+    .maia-talks summary {
+      cursor: pointer;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.9em;
+      font-weight: 600;
+      color: #0d6efd;
+    }
+    .maia-talks ol { list-style: none; padding: 0; margin: 0.4rem 0 0; }
+    .day-topics .maia-talks li {
+      display: block;
+      padding: 0.25rem 0;
+      border-bottom: 1px dashed #e9ecef;
+      font-size: 0.95em;
+      color: #495057;
+    }
+    .day-topics .maia-talks li:last-child { border-bottom: none; }
+    .day-topics .maia-talks li::before { content: none; }
+    .maia-talks a { color: #004080; font-weight: 600; text-decoration: none; }
+    .maia-talks a:hover { text-decoration: underline; }
+    .maia-talks .fa-file-pdf { color: #0d6efd; }
+    .maia-talks .maia-speaker { display: block; color: #6c757d; font-size: 0.92em; }
 
     .day-date {
       font-family: 'Poppins', sans-serif;
@@ -519,6 +560,9 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
   <div class="container">
     <h2 class="text-center mb-3">Programme prévisionnel</h2>
     <p class="text-center text-muted mb-4">Du lundi 19 au vendredi 23 octobre 2026 · programme susceptible d'évoluer</p>
+    <p class="text-center mb-4">
+      <a class="btn btn-outline-primary btn-sm" href="talks/programme-ia2-2026.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-2"></i>Télécharger le programme (PDF)</a>
+    </p>
 
     <div class="language-notice mx-auto mb-5">
       <i class="fas fa-language me-2"></i>
@@ -534,11 +578,11 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
           <div class="day-theme">Panorama de l'IA et sciences</div>
           <ul class="day-topics">
             <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil et ouverture</span></li>
-            <li><span class="session-time">9:00 – 10:30</span><div>Introduction : IA et recherche scientifique<span class="session-speaker">Miguel Couceiro (IST, U. Lisboa)</span></div></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Introduction : IA et recherche scientifique<span class="session-speaker">Miguel Couceiro (IST, U. Lisboa)</span><a class="session-slides" href="talks/lundi/couceiro-ia-recherche-scientifique.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
-            <li><span class="session-time">11:00 – 12:30</span><div>Apprentissage et deep learning<span class="session-speaker">Frédéric Koriche (CRIL, CNRS)</span></div></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>Apprentissage et deep learning<span class="session-speaker">Frédéric Koriche (CRIL, CNRS)</span><a class="session-slides" href="talks/lundi/koriche-apprentissage-deep-learning.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
-            <li><span class="session-time">14:00 – 16:00</span><div>Raisonnement neuro-symbolique<span class="session-speaker">Thomas Schiex (INRAE, France)</span></div></li>
+            <li><span class="session-time">14:00 – 16:00</span><div>Raisonnement neuro-symbolique<span class="session-speaker">Thomas Schiex (INRAE, France)</span><a class="session-slides" href="talks/lundi/schiex-raisonnement-neuro-symbolique.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">16:00 – 16:15</span><span>Pause</span></li>
             <li class="session-poster"><span class="session-time">16:15 – 17:15</span><div>Présentations des participants et de leurs travaux</div></li>
              <li class="session-poster"><span class="session-time">18:00 – 19:30</span><div>Cocktail de bienvenue</div></li>
@@ -553,11 +597,11 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
           <div class="day-theme">Graphes de connaissances et applications biomédicales</div>
           <ul class="day-topics">
             <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
-            <li><span class="session-time">9:00 – 10:30</span><div>Graphes de connaissances : bases<span class="session-speaker">Fatiha Saïs (Paris Saclay University)</span></div></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Graphes de connaissances : bases<span class="session-speaker">Fatiha Saïs (Paris Saclay University)</span><a class="session-slides" href="talks/mardi/sais-graphes-de-connaissances.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
-            <li><span class="session-time">11:00 – 12:30</span><div>Extraction et raisonnement en biomédecine<span class="session-speaker">Adrien Coulet (INRIA)</span></div></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>Extraction et raisonnement en biomédecine<span class="session-speaker">Adrien Coulet (INRIA)</span><a class="session-slides" href="talks/mardi/coulet-extraction-raisonnement-biomedecine.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
-            <li><span class="session-time">14:00 – 16:00</span><div>Cas d'usage en biologie et santé<span class="session-speaker">Gayo Diallo (Univ Bordeaux)</span></div></li>
+            <li><span class="session-time">14:00 – 16:00</span><div>Cas d'usage en biologie et santé<span class="session-speaker">Gayo Diallo (Univ Bordeaux)</span><a class="session-slides" href="talks/mardi/diallo-cas-usage-biologie-sante.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">16:00 – 16:15</span><span>Pause</span></li>
             <li class="session-poster"><span class="session-time">16:15 – 17:15</span><div>Session posters et exposés courts</div></li>
           </ul>
@@ -571,7 +615,7 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
           <div class="day-theme">Langues, grands modèles et données médicales</div>
           <ul class="day-topics">
             <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
-            <li><span class="session-time">9:00 – 10:30</span><div>Traitement automatique des langues / Natural Language Processing<span class="session-speaker">Pierre Zweigenbaum (LISN, CNRS, Université Paris-Saclay)</span></div></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Traitement automatique des langues / Natural Language Processing<span class="session-speaker">Pierre Zweigenbaum (LISN, CNRS, Université Paris-Saclay)</span><a class="session-slides" href="talks/mercredi/zweigenbaum-tal-introduction.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
             <li><span class="session-time">11:00 – 12:30</span><div>Modèles de langue de grande taille<span class="session-speaker">Christophe Cerisara (Loria, Nancy)</span></div></li>
             <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
@@ -588,13 +632,38 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
           <div class="day-theme">IA pour les matériaux et l'environnement</div>
           <ul class="day-topics">
             <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
-            <li><span class="session-time">9:00 – 10:30</span><div>Génération et découverte de matériaux<span class="session-speaker">Astrid Klipfel (CRIL CNRS)</span></div></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Génération et découverte de matériaux<span class="session-speaker">Astrid Klipfel (CRIL CNRS)</span><a class="session-slides" href="talks/jeudi/klipfel-generation-materiaux.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
             <li><span class="session-time">11:00 – 12:30</span><div>Conception de matériaux et environnement<span class="session-speaker">Adlane Sayede (UCCS CNRS)</span></div></li>
             <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
-            <li class="session-poster"><span class="session-time">14:00 – 16:00</span><div>Démonstrations et échanges autour des applications présentées – Projet MAIA</div></li>
+            <li class="session-poster"><span class="session-time">14:00 – 16:00</span><div>Démonstrations et échanges autour des applications présentées – Projet MAIA
+              <details class="maia-talks">
+                <summary>Projets MAIA : voir les 8 présentations</summary>
+                <ol>
+                  <li><a href="talks/jeudi/maia/00-presentation-maia.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Présentation du projet MAIA</a></li>
+                  <li><a href="talks/jeudi/maia/01-biofabia.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>BioFabIA : implants personnalisés</a><span class="maia-speaker">Nadir Souffou</span></li>
+                  <li><a href="talks/jeudi/maia/02-forestt.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Forestt : topologie, apprentissage et résilience des forêts</a><span class="maia-speaker">Mouny Samy Modeliar</span></li>
+                  <li><a href="talks/jeudi/maia/03-maia-sante.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>MAIA : l'IA au service de la santé</a><span class="maia-speaker">Nicolas Szczepanski</span></li>
+                  <li><a href="talks/jeudi/maia/04-escargot-helix-corse.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Escargot Hélix de Corse</a><span class="maia-speaker">Frédéric Boussemart, Pierre-Marie Fayette, Mouny Samy Modeliar</span></li>
+                  <li><a href="talks/jeudi/maia/05-webinaires-maia.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Les webinaires MAIA</a><span class="maia-speaker">Frédéric Boussemart, Fadoua Bouzallif</span></li>
+                  <li><a href="talks/jeudi/maia/06-interventions-ecoles.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Interventions dans les écoles</a><span class="maia-speaker">Mouny Samy Modeliar</span></li>
+                  <li><a href="talks/jeudi/maia/07-formation-maia.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Développer les compétences en IA : la formation MAIA</a><span class="maia-speaker">Gilles Audemard, Fadoua Bouzallif</span></li>
+                </ol>
+              </details>
+            </div></li>
             <li class="session-break"><span class="session-time">16:00 – 16:15</span><span>Pause</span></li>
-            <li class="session-poster"><span class="session-time">16:15 – 17:15</span><div>Démonstrations et échanges autour des applications présentées – Projet MAIA</div></li>
+            <li class="session-poster"><span class="session-time">16:15 – 17:15</span><div>Démonstrations et échanges autour des applications présentées – Projet MAIA
+              <details class="maia-talks">
+                <summary>Outils et démonstrations : voir les 5 présentations</summary>
+                <ol>
+                  <li><a href="talks/jeudi/maia/08-teaser-pycsp3.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>PyCSP3 : modéliser des problèmes combinatoires</a><span class="maia-speaker">Christophe Lecoutre</span></li>
+                  <li><a href="talks/jeudi/maia/09-teaser-pyimagelabeling.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>PyImageLabeling : annoter des images avec l'IA (teaser)</a></li>
+                  <li><a href="talks/jeudi/maia/10-teaser-pyxai.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>PyXAI : des explications garanties pour l'IA (teaser)</a></li>
+                  <li><a href="talks/jeudi/maia/12-demo-pyimagelabeling.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Démo PyImageLabeling</a></li>
+                  <li><a href="talks/jeudi/maia/13-demo-pyxai.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Démo PyXAI</a></li>
+                </ol>
+              </details>
+            </div></li>
           </ul>
         </div>
       </div>
@@ -606,9 +675,9 @@ L’édition 2026 s’inscrit dans cette dynamique en élargissant l’ouverture
           <div class="day-theme">Éthique et perspectives</div>
           <ul class="day-topics">
             <li class="session-break"><span class="session-time">8:30 – 9:00</span><span>Accueil</span></li>
-            <li><span class="session-time">9:00 – 10:30</span><div>Éthique de l'IA dans la recherche<span class="session-speaker">Marion Ho-Dac (Centre Droit, Éthique et Procédures)</span></div></li>
+            <li><span class="session-time">9:00 – 10:30</span><div>Éthique de l'IA dans la recherche<span class="session-speaker">Marion Ho-Dac (Centre Droit, Éthique et Procédures)</span><a class="session-slides" href="talks/vendredi/ho-dac-ethique-ia.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">10:30 – 11:00</span><span>Pause</span></li>
-            <li><span class="session-time">11:00 – 12:30</span><div>IA responsable : transparence, explicabilité et impacts sociétaux <span class="session-speaker">Céline Hudelot (CentraleSupélec - MICS)</span></div></li>
+            <li><span class="session-time">11:00 – 12:30</span><div>IA responsable : transparence, explicabilité et impacts sociétaux <span class="session-speaker">Céline Hudelot (CentraleSupélec - MICS)</span><a class="session-slides" href="talks/vendredi/hudelot-ia-responsable.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf me-1"></i>Slides</a></div></li>
             <li class="session-break"><span class="session-time">12:30 – 14:00</span><span>Déjeuner</span></li>
           </ul>
         </div>
